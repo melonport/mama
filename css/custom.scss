@@ -24,18 +24,6 @@ body{
 .nav-text a{
   font-family: 'Open Sans', sans-serif !important;
 }
-.mail-icon{
-  background-color: #252525;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 46px;
-  padding: 0px !important;
-}
-.mail-icon:hover{
-  background-color: #4e4e4e;
-}
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -84,20 +72,8 @@ section {
 }
 .hero-fullscreen {
     position: relative;
-    height: 80vh;
+    height: 75vh;
     overflow: hidden;
-}
-@media all and (max-width: 992px) {
-    // .hero-fullscreen {
-    //     height: auto;
-    // }
-    .hero-fullscreen .container {
-        padding-top: 0;
-        top: 0;
-        transform: none;
-        -moz-transform: none;
-        -webkit-transform: none;
-    }
 }
 .hero-fullwidth {
     height: 70vh;
@@ -107,6 +83,15 @@ section {
 .hero-50.parallax > .background-image {
     height: 100%;
     top: 0;
+}
+@media all and (max-width: 992px) {
+    .hero-fullscreen .container {
+        padding-top: 0;
+        top: 0;
+        transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+    }
 }
 @media all and (max-width: 992px) {
     .hero-fullwidth, .hero-50 {
@@ -158,7 +143,7 @@ section {
 }
 .m-left{
   margin-left: 0px;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .hero-content {
@@ -180,7 +165,7 @@ h1.site-title{
 }
 h6.about{
   font-family: 'Open Sans';
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 300;
 	line-height: 1.7;
   margin-top: 30px;
@@ -213,8 +198,8 @@ h6.about{
     transition: all .15s ease-in-out;
     font-weight: 400;
     text-align: center;
-    color: #a4986b;
-    font-size: 15px;
+    color: #282829;
+    font-size: 13px;
 }
 .btn-primary-mama:hover{
     background-color: transparent;
@@ -231,129 +216,46 @@ h6.about{
     text-decoration: none;
 }
 
-// .company-slogan{
-//   font-family: Ubuntu;
-// 	font-size: 62px;
-// 	font-weight: 700;
-// 	line-height: 1.29;
-// 	letter-spacing: 0.6px;
-// 	text-align: center;
-// 	color: #252525;
-// }
-// .company-name{
-//   font-family: Ubuntu;
-// 	font-size: 36px;
-// 	font-weight: 300;
-// 	line-height: 0.67;
-// 	letter-spacing: 0.7px;
-// 	text-align: center;
-// 	color: #252525;
-// }
-// .company-slogan{
-//   font-family: Ubuntu;
-// 	font-size: 62px;
-// 	font-weight: 700;
-// 	line-height: 1.29;
-// 	letter-spacing: 0.6px;
-// 	text-align: center;
-// 	color: #252525;
-// }
-.activity{
-  text-align: center;
-}
-.latest-commit{
-  display: inline-table;
-}
-.commits{
-  display: inline-table;
-  margin-left: 40px;
-}
-.latest-icon{
-  background-color: #ffffff;
-	border: solid 1px #b6b6b6;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 38px;
-  padding: 0px !important;
-  display: inline-table;
-}
-.detail{
-  display: inline;
-  margin-left: 20px;
-}
-span.light{
-  font-weight: 300;
-  color: #4e4e4e;
-}
-span.bold{
-  font-weight: 700;
-}
 
 
 
 
 .mama-foot{
-  height: 70px;
-  padding-top: 22px;
+  height: 60px;
+  padding-top: 10px;
   border-top: 1px solid #d1d1d1;
+}
+.mama-foot p.copyright{
+  padding-top: 10px;
+  margin-right: -15px;
 }
 p.copyright{
   font-size: 14px;
   font-weight: 300;
   color: #777777;
+  margin-left: -15px;
 }
-// .melon-foot{
-//   height: 105px;
-//   padding-top: 22px;
-//   -webkit-box-shadow: 1px -11px 20px -1px rgba(224,224,224,0.3);
-//   -moz-box-shadow: 1px -11px 20px -1px rgba(224,224,224,0.3);
-//   box-shadow: 1px -11px 20px -1px rgba(224,224,224,0.3);
-// }
-.melon-chat{
-  display: inline-table;
+.fixed-bottom{
+  background: rgba(245,245,245,0.93);
+  border-top: 2px solid #a4986b;
 }
-.melon-social{
-  display: inline-table;
-  padding-top: 10px;
+.members-logo{
+  height: 65px;
+  margin-top: 25px;
 }
-ul.melon-social li{
+.members-logo ul li{
   list-style: none;
   float: left;
-  padding-left: 20px;
-  text-decoration: none;
+  margin-left: -55px;
+  text-align: center;
 }
-ul.melon-social{
-  float: right;
+.canton{
+  text-align: right;
 }
-.gitter-logo{
-  float: left;
+img.logos{
+  width: 100%;
+  text-align: center;
 }
-.gitter-text{
-  padding-left: 18px;
-  padding-top: 5px;
-  float: left;
-  display: block;
-  color: #868686;
-  font-weight: 300;
-}
-.gitter-text-bold{
-  font-weight: 700;
-}
-.nav-menu-center{
-  margin:0px auto !important;
-  background: #f5f5f5;
-  border-radius: 200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 60% !important;
-  margin-top: 15px !important;
-}
-span.gitter{
-  display: block;
-}
-
 
 
 
@@ -363,6 +265,18 @@ span.gitter{
   max-width: 1020px;
   background-color: #f5f5f5;
 	box-shadow: 3.7px 11.4px 27px 8.1px rgba(143, 143, 143, 0.25);
+}
+.modal-title{
+  text-align: right;
+}
+.modal-title h5{
+  font-size: 28px;
+  border-bottom: 2px solid #a4986b;
+  padding-bottom: 20px;
+}
+.modal-text{
+  font-size: 16px;
+  padding-left: 60px;
 }
 .modal-header{
   padding: 25px;
