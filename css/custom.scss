@@ -32,27 +32,67 @@ body{
   }
 }
 @media (max-width: 330px) {
-  .company-slogan{
-    font-size: 34px!important;
+  h1.site-title{
+    font-family: 'Open Sans';
+  	font-size: 40px !important;
+  	color: #282829 !important;
   }
-  .company-name{
-    font-size: 22px!important;
+  h6.about{
+    font-family: 'Open Sans';
+  	font-size: 16px !important;
+  	color: #252525 !important;
+  }
+  .members-logo{
+    display: none;
+  }
+  .mama-foot p.copyright {
+    margin-right: 0px !important;
+  }
+  p.copyright {
+    margin-left: 0px !important;
+    font-size: 12px !important;
+  }
+  .fixed-bottom{
+    position: relative;
+  }
+  .hero-fullscreen{
+    height: 115vh !important;
+  }
+  .mama-foot{
+    height: auto!important;
+    padding-top: 10px !important;
   }
 }
 @media (min-width: 329px) and (max-width: 469px) {
-  .company-slogan{
-    font-size: 36px!important;
+  h1.site-title{
+    font-family: 'Open Sans';
+  	font-size: 40px !important;
+  	color: #282829 !important;
   }
-  .company-name{
-    font-size: 25px!important;
+  h6.about{
+    font-family: 'Open Sans';
+  	font-size: 16px !important;
+  	color: #252525 !important;
   }
-}
-@media (min-width: 329px) and (max-width: 469px) {
-  ul.melon-social li{
-    padding-left:7px !important;
+  .members-logo{
+    display: none;
   }
-  ul.melon-social{
-    padding-left: 0px !important;
+  .mama-foot p.copyright {
+    margin-right: 0px !important;
+  }
+  p.copyright {
+    margin-left: 0px !important;
+    font-size: 12px !important;
+  }
+  .fixed-bottom{
+    position: relative;
+  }
+  .hero-fullscreen{
+    height: 115vh !important;
+  }
+  .mama-foot{
+    height: auto!important;
+    padding-top: 10px !important;
   }
 }
 @media (min-width: 1200px) {
