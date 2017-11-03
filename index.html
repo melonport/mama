@@ -1,139 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MAMA | Multichain Asset Managers Association</title>
-    <link href="assets/favicon.png" rel="icon" type="image/png">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MAMA | Multichain Asset Managers Association</title>
+        <link href="img/favicon.png" rel="icon" type="image/png">
+        <link href="css/plugins.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.min.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
+        <link href="fonts/flaticon/flaticon.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
 
-    <!-- Open Sans Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navigation -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light mama-nav">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/mama_logo.svg" width="154" height="50" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- PRELOADER -->
+        <div class="preloader"><div></div></div>
+        <!-- -->
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="btn-secondary-mama" href="mailto:team@melonport.com?Subject=Hello%20MAMA" target="_top" title="e-mail us">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+        <!-- NAV BAR -->
+        <nav class="navbar sticky transparent-white">
+            <div class="container fluid-container hidden-md">
+                <div class="row">
+                    <div class="col-md-6">
+                      <a class="navbar-brand" href="#hero">
+                        <img src="img/mama_logo.svg" width="154" height="50" alt="">
+                      </a>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="ul-h nav-menu nav-menu-right">
+                            <li><a href="#vision" class="btn-scroll">Vision</a></li>
+                            <li><a href="#goals" class="btn-scroll">Goals</a></li>
+                            <li><a href="#members" class="btn-scroll">Members</a></li>
+                            <li class="contact"><a class="btn-secondary-mama" href="mailto:team@melonport.com?Subject=Hello%20MAMA" target="_top" title="e-mail us">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-    <!-- MAIN CONTENT -->
-    <section id="hero" class="hero-fullscreen bg-white">
-      <div class="background-image">
-        <img src="assets/bg.png" alt="#">
-      </div>
-      <div class="hero-content">
-        <div class="container width-size">
-          <div class="col-md-7 col-sm-6 col-xs-10 m-left white">
-            <h1 class="site-title">Multichain Asset Managers Association</h1>
-            <h6 class="about">
-              MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors,
-              technology providers, service providers and ecosystem players interested in working towards a new vision for asset
-              management using blockchain and other supporting decentralised technologies.
-            </h6>
-            <a class="btn-primary-mama" href="#" target="_top" title="learn more" data-toggle="modal" data-target="#GoalModal">LEARN MORE</a>
+            <!-- Collapsed Navigation Bar -->
+            <nav class="navbar navbar-collaps">
+                <div class="container fluid-container">
+                    <div class="collapsed-hero-logo">
+                        <div class="logo-img">
+                            <img src="img/mama_logo.svg" width="154" height="50" alt="#">
+                        </div>
+                    </div>
+                    <div class="hamburger-menu">
+                        <button type="button" class="hamburger-btn clicked">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Collapsed Dropdown -->
+                <div class="collapsed-dropdown">
+                    <ul class="ul-v">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#goals">Goals</a></li>
+                        <li><a href="#members">Members</a></li>
+                        <li><a class="btn-secondary-mama" href="mailto:team@melonport.com?Subject=Hello%20MAMA" target="_top" title="e-mail us">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <!-- -->
+            </nav>
+            <!-- -->
+        </nav>
+        <!-- -->
+
+        <!-- HERO -->
+        <section id="hero" class="parallax hero-fullscreen bg-white">
+          <div class="background-image">
+            <img src="img/bg.png" alt="#">
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <div class="fixed-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col members-logo">
-            <ul>
-              <li><a href="#"><img src="assets/logos/member_logos4.png" class="logos"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row mama-foot">
-          <div class="col">
-            <p class="copyright">Copyright © 2017 MAMA</p>
-          </div>
-          <div class="col">
-            <div class="canton">
-              <a href="#"><img src="assets/logos/canton.svg" width="120" height="38"></a>
+          <div class="hero-content">
+            <div class="container width-size">
+              <div class="col-md-7 col-sm-6 col-xs-10 m-left white">
+                <h1 class="site-title">Multichain Asset Managers Association</h1>
+                <h6 class="about">
+                  MAMA is a trade body, initiated by Melonport AG, which represents asset management companies, investors,
+                  technology providers, service providers and ecosystem players interested in working towards a new vision for asset
+                  management using blockchain and other supporting decentralised technologies.
+                </h6>
+                <a class="btn-primary-mama" href="#vision" title="learn more">LEARN MORE</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
+        <!-- -->
 
-    <!-- Goal Modal -->
-    <div class="modal fade" id="GoalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog melon-modal" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">&nbsp;</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <img src="assets/close-icon.png" width="25" height="25">
-            </button>
+        <!-- VISION -->
+        <section id="vision" class="bg-white">
+          <div class="container pt140 pb140">
+            <div class="row">
+              <div class="col-md-6 map-illustration">
+                <img src="img/map-illustration.png" alt="illustration" width="100%">
+              </div>
+              <div class="col-md-6">
+                <div class="title">
+                  <h6 class="sentence">What we believed</h6>
+                  <h3 class="section-title">Our Vision</h3>
+                  <div class="mt10 mb20"><img src="img/line.png"></div>
+                </div>
+                <div class="section-content">
+                  <p>
+                    We believe MAM technology has the real potential to hasten a [sweeping] transformation of the Asset Management industry, democratizing
+                    and streamlining the cumbersome processes and infrastructure upon which the global financial system runs today. <br /><br />
+                    The innovators emerging around MAM technology have a truly unique window of opportunity to redesign a new frontier of
+                    financial infrastructure by incorporating the latest technology without the burden of backward compatibility and legacy systems.
+                  </p>
+                  <a href="#" class="mama-link" target="_top" title="learn more" data-toggle="modal" data-target="#VisionModal"><img src="img/arrow.png" class="link-arrow">READ MORE</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            <section id="hero" class="modal-content-body">
-              <!-- <div class="background-image">
-                <img src="assets/logo-bg.png" alt="#">
-              </div> -->
-              <div class="hero-content hero-modal">
-                <div class="container width-size">
-                  <div class="row">
-                    <div class="col-md-4 modal-title">
-                      <h5>OUR GOALS</h5>
+        </section>
+        <!-- -->
+
+        <!-- GOALS -->
+        <section id="goals" class="bg-smoked">
+          <div class="container pt140 pb140">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="title-quote">
+                  <span class="quote-bold">The Goal of this Association</span> is to provide a forum for  discussion among Association members who will also be the  drivers towards a unified
+                </p>
+                <div class="mt20 mb20"><img src="img/line.png"></div>
+              </div>
+              <div class="col-md-6 mt30">
+                <ul class="no_bullet">
+                  <li class="mama-list">Shaping regulation in MAM technology and promoting industry-wide best practices</li>
+                  <li class="mama-list">Research and education in and around the MAM technology ecosystem</li>
+                  <li class="mama-list">Promoting security best practices paramount to MAM technology</li>
+                  <li class="mama-list">Taking a leadership role in defining and setting industry standards for MAM</li>
+                  <li class="mama-list">Shaping future governance procedures around MAM systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- -->
+
+        <!-- MEMBERS -->
+        <section id="members" class="bg-white">
+          <div class="container pt140 pb140">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="title center-text">
+                  <h6 class="sentence">Association</h6>
+                  <h3 class="section-title">Members</h3>
+                  <div class="mt10 mb20"><img src="img/line.png"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row center-text">
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/base58.png">
+                      </div>
                     </div>
-                    <div class="col-md-8 modal-text">
-                      <p>The goal of this Association is to provide a forum for discussion among Association members who will also be the drivers towards a unified, industry-wide voice to tackle issues such as:</p>
-                      <ul>
-                        <li><p>Shaping regulation in MAM technology and promoting industry-wide best practices</p></li>
-                        <li><p>Self-regulating in the absence of non-clear regulatory guidelines</p></li>
-                        <li><p>Research and education in and around the MAM technology ecosystem</p></li>
-                        <li><p>Promoting security best practices paramount to MAM technology</p></li>
-                        <li><p>Taking a leadership role in defining and setting industry standards for MAM</p></li>
-                        <li><p>Shaping future governance procedures around MAM systems</p></li>
-                        <li><p>Working with other bodies to provide best practice and guidance around Token issuance</p></li>
-                      </ul>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/bitcoinsuisse.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/credit_suisse.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/bussman.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/kryptonite1.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/kenetic_capital.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/crypto_fund.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/ethfinex.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/lendriod.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/lykke.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/consensys.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/midas.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/mme.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/vcapv.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/jtc.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/omega_one.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/0x.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/neufund.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/gabi.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/vo1t.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <div class="responsive-container">
+                      <div class="forces"></div>
+                      <div class="img-container">
+                        <img src="img/members/scytale_ventures.png">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+          </div>
+        </section>
+        <!-- -->
+
+        <!-- Vision Modal -->
+        <div class="modal fade" id="VisionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog melon-modal" role="document">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">&nbsp;</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <img src="img/close-icon.png" width="25" height="25">
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <section id="hero" class="modal-content-body">
+                      <div class="hero-content hero-modal">
+                          <div class="row">
+                            <div class="col-md-12 modal-title">
+                              <div class="title center-text">
+                                <h6 class="sentence">What we believed</h6>
+                                <h3 class="section-title">Our Vision</h3>
+                                <div class="mt10 mb20"><img src="img/line.png"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-12 modal-text">
+                              <p>
+                                We believe MAM technology has the real potential to hasten a [sweeping] transformation of the Asset Management industry, democratizing
+                                and streamlining the cumbersome processes and infrastructure upon which the global financial system runs today. <br /><br />
+
+                                The innovators emerging around MAM technology have a truly unique window of opportunity to redesign a new frontier of
+                                financial infrastructure by incorporating the latest technology without the burden of backward compatibility and legacy systems. <br /><br />
+
+                                Governance systems and regulation designed around these new technologies will play
+                                a significant role in the mechanisms of future decision-making and dispute resolution. Already, new examples of governance systems are beginning to surface that can,
+                                through pioneering technical design and voting processes, empower even the most vulnerable participants in an ecosystem. <br /><br />
+
+                                It is also becoming clear that the adoption MAM technology will save investors and asset managers significant resources in terms of  effort,
+                                time and capital, leading to increased transparency, seamless regulatory reporting and a drastic reduction in the scope for human error.<br /><br />
+
+                                Protocol tokens such as Bitcoin or Ethereum are to a large degree already recognized as an asset class in their own right, and we believe they are here to stay.
+                                However, we fundamentally have a much broader vision for MAMA. We believe that every individual traditional asset class (e.g. equities, commodities, bonds, real-estate, etc.)
+                                has the potential to be “digitized” into the “token class”, and thus, the universe of tradable digital assets within MAM will continue to expand exponentially as these assets
+                                seek to capture blockchain efficiencies and benefits. <br /><br />
+
+                                This evolution will require a similar evolution of fit-for-purpose MAM software. Our vision is that it will soon be possible to hold more assets in a MAM-regulated and
+                                administered fund, than it is in a traditional investment account today.<br /><br />
+
+                                The transformation is happening. It is happening fast and it is the intention of MAMA to support the industry through the change as stipulated in the Goals below.<br /><br />
+                              </p>
+                            </div>
+                          </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Default JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-12">
+                <div class="logo-img">
+                  <a href="#hero"><img src="img/mama_logo.svg" alt="#"></a>
+                </div>
+                <div class="mt10">
+                  <p class="copyright mt-60">Copyright © 2017 MAMA</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <ul class="ul-h nav-menu footer-menu">
+                  <li><a href="#hero" class="btn-scroll">Home</a></li>
+                  <li><a href="#vision" class="btn-scroll">Vision</a></li>
+                  <li><a href="#goals" class="btn-scroll">Goals</a></li>
+                  <li><a href="#members" class="btn-scroll">Members</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="sponsor-logo">
+                  <a href="#hero"><img src="img/canton.png" alt="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- -->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>
-
-    <!-- Script Modal-->
-    <script>
-      $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').focus()
-      })
-    </script>
-  </body>
+        <script src="js/jquery.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
