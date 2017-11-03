@@ -53,6 +53,19 @@ nav.navbar.transparent-white ul.ul-h.nav-menu > li > a{
     top: 30%!important;
   }
 }
+@media (min-width: 320px) and (max-width: 990px) {
+  .modal-text{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .hero-modal{
+    padding-top: 15px !important;
+  }
+  .modal-dialog{
+    margin:0px auto !important;
+    width: 90% !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 400px) {
   li.mama-list{
     height: 68px !important;
@@ -414,7 +427,7 @@ img.logos{
   padding: 0px;
 }
 .modal{
-  z-index: 999999;
+  z-index: 999999999;
 }
 .fade{
   opacity: 0.9;
