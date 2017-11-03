@@ -53,6 +53,11 @@ nav.navbar.transparent-white ul.ul-h.nav-menu > li > a{
     top: 30%!important;
   }
 }
+@media (min-width: 320px) and (max-width: 400px) {
+  li.mama-list{
+    height: 68px !important;
+  }
+}
 @media (min-width: 479px) and (max-width: 1020px){
   h1.site-title{
     font-family: 'Open Sans';
