@@ -323,7 +323,6 @@ li.mama-list {
 /* Footer */
 .footer {
   background: #f9fafc;
-  height: 145px;
   border-top: 2px solid #a4986b;
   padding-top: 50px;
 }
@@ -383,8 +382,19 @@ img.logos{
   width: 100%;
   text-align: center;
 }
-
-
+.social-icons{
+  border-top: 1px solid #BEBEBE;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.social-icons ul li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+}
 
 
 /* MODAL */
@@ -482,116 +492,4 @@ p.content-tab{
 }
 .hero-modal{
   padding-top: 0px !important;
-}
-
-
-
-
-
-/*TEAM MODAL*/
-.team-content .container{
-  padding:0px !important;
-}
-.modal-team-body {
-    position: relative;
-    height: 60vh;
-    overflow: scroll;
-}
-h3.team-heading{
-  font-size: 30px;
-	font-weight: bold;
-	line-height: 0.77;
-	letter-spacing: 0.3px;
-	text-align: center;
-	color: #252525;
-  margin-bottom: 60px;
-  border-bottom: 1px solid #d1d1d1;
-  padding-bottom: 40px;
-  width: 84%;
-  margin: 0px auto;
-  margin-bottom: 40px;
-}
-h3.advisors-heading{
-  font-size: 30px;
-	font-weight: bold;
-	line-height: 0.77;
-	letter-spacing: 0.3px;
-	text-align: center;
-	color: #252525;
-  margin-bottom: 60px;
-  border-bottom: 1px solid #d1d1d1;
-  padding-bottom: 40px;
-  width: 84%;
-  margin: 0px auto;
-}
-.founder-body{
-  margin-top: 40px;
-  margin-left: 15px;
-}
-.founder-bio p{
-	font-size: 15px;
-	line-height: 1.6;
-	color: #252525;
-  font-weight: 300;
-  margin-top: 20px;
-  width: 90%;
-}
-.media-body h5{
-  font-size: 20px;
-	font-weight: 500;
-	letter-spacing: 0.2px;
-	color: #252525;
-}
-.media-body p{
-  font-size: 16px;
-	font-weight: 300;
-	letter-spacing: 0.2px;
-	color: #252525;
-}
-.founder-social nav.nav{
-  background: transparent;
-}
-.founder-social .nav-link{
-  padding:0px;
-  padding-right: 15px;
-}
-.teams{
-  margin-top: 50px;
-  margin-left: -50px;
-}
-.team-member{
-  text-align: center;
-  margin-bottom: 35px;
-}
-.team-info{
-  margin-top: 18px;
-}
-.team-info h5 {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    color: #252525;
-}
-.team-info p{
-  font-size: 16px;
-	font-weight: 300;
-	letter-spacing: 0.2px;
-	color: #252525;
-}
-.team-social{
-  text-align: center;
-}
-.team-social .nav{
-  background: transparent;
-}
-.team-social .nav-link{
-  padding:0px;
-  padding-right: 7px;
-  padding-left: 8px;;
-}
-.advisors{
-  margin-top: 80px;
-}
-.advisors-content{
-  margin-bottom: 50px;
 }
